@@ -1,0 +1,49 @@
+title: Making This Site
+---
+body:
+
+I had a good play with raw bootstrap based static sites, using Jinja. I played
+around with Jekyll in the first iteration of the site which I liked: I thought
+might be nice to learn Ruby off the back of that. But in reality these "nice"
+ideas always end up being more work than they're worth. To be honest
+I really like using Python, I don't need any more barriers to putting something.
+I don't like blogging, or self promotion or anything like that, so barriers are
+easily constructed if you're not careful.
+
+As a result, I'm using [Lektor](https://www.getlektor.com/), it's a nice, Python
+based file based CMS which is totally extensible. That's easy, flexible and
+functional enough not to produce any barriers.
+
+I've munged in a bit of bootstrap and jquery around the sides, as I don't do
+aesthetics. I have looked at NPM and the like for resource management.
+
+Again, too many barriers. I'm keeping it simple. Thankfully we live in a world
+where one doesn't have to pour hours into determining if something will work
+across browsers. In fact having to do that 10, 20, 25 years ago is probably
+what put me off web development and design.
+
+It was mind-numbingly boring in the old days. As it is I might never end up
+updating the site, but we'll see... In this age of lockdown, putting yourself
+out there on the internet is not a bad thing, especially considering I was very
+much a tech-for-engineering, face-to-face socialising type of animal before all
+this.
+
+I salute the [W3C](https://www.w3.org/TR/) and framework builders around the
+world, you've finally made putting together a website easy enough that the most
+stubborn backend/infrastructure programmer will put one together.
+
+Anyway, this is a working base, but I'll make some new parts to this post to
+cover what I do with lektor to:
+
+* Tag blog posts
+* Integrate with my [github](https://github.com/JimCircadian) so I can blog
+about stuff I genuinely like doing
+* Really get under the hood of Lektor to add richer content and automation (e.g.
+[Flows](https://www.getlektor.com/docs/content/flow/),
+[Data Bags](https://www.getlektor.com/docs/content/databags/) and
+[Image Operations](https://www.getlektor.com/docs/templates/imageops/) are all
+interesting and deserve some blogging about I think)
+* Blog about some of the things I actually do day to day
+* Make the styling a bit less gross!
+---
+pub_date: 2020-08-29

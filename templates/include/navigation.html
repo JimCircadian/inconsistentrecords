@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <a class="text-muted navbar-brand{% if this._path == '/' %} class="active"{% endif %}" href="{{ '/'|url }}">Inconsistent Records</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      {% for href, title in [
+        ['/blog', 'Blog'],
+        ['/projects', 'Projects'],
+        ['/about', 'About']
+      ] %}
+        <li class="nav-item {% if this.is_child_of(href) %}active{% endif %}">
+          <a class="nav-link" href="{{ href|url }}">{{ title }}</a></li>
+      {% endfor %}
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      &nbsp;
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,17 @@
+[project]
+name = Inconsistent Records
+
+; These should never be easily identifiable. If we need identifiable strings in
+; here, keep them out of this very public repo
+[servers.dev]
+name = Development
+default = yes
+target = rsync://localhost/var/www/html/inconsistentrecords
+
+[servers.staging]
+name = Local Staging
+target = rsync://staging-host/var/www/blog.inconsistentrecords
+
+[servers.production]
+name = Production!
+target = rsync://production-vps/var/www/blog.inconsistentrecords
