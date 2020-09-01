@@ -1,5 +1,9 @@
 [project]
 name = Inconsistent Records
+; TODO: Still wondering why this is required, the deploy process taking care of
+; this WOULD BE AMAZING!
+url = https://inconsistentrecords.co.uk/
+url_style = absolute
 
 ; These should never be easily identifiable. If we need identifiable strings in
 ; here, keep them out of this very public repo

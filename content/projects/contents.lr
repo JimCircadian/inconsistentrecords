@@ -1,9 +1,14 @@
+_model: projects
+---
 title: Projects
+---
+template: projects.html
 ---
 body:
 
-This is a list of the projects:
+### Projects
 
-* Project 1
-* Project 2
-* Project 3
+I like to create and contribute to things, but alas I don't get to publicly nearly as much as I'd like! Below you'll find some information relating to various things I've developed and my actual thoughts on those projects, not available on github itself!!!! 
+<br />
+<br />
+
