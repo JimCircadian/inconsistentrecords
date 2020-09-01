@@ -2,27 +2,28 @@
 {% from "macros/blog.html" import render_blog_post %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {% if this.toc %}
-  <h4>Table Of Contents</h4>
-  <ul class="toc">
-  {% for item in this.body.toc recursive %}
-    <li><a href="#{{ item.anchor }}">{{ item.title }}</a>{%
-     if item.children %}<ul>{{ loop(item.children) }}</ul>{% endif %}</li>
-  {% endfor %}
-  </ul>
-  {% endif %}
   <div class="container row">
     <div class="col-sm-10">
+      {% if this.toc %}
+      <h5>Table Of Contents</h5>
+      <ul class="toc">
+      {% for item in this.body.toc recursive %}
+        <li><a href="#{{ item.anchor }}">{{ item.title }}</a>{%
+         if item.children %}<ul>{{ loop(item.children) }}</ul>{% endif %}</li>
+      {% endfor %}
+      </ul>
+      <br />
+      {% endif %}
       {{ render_blog_post(this) }}
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-2 tag-panel">
       {% if this.tags %}
-        <p>Tags: </p>
+        <h4>Tags: </h4>
         {% for t in this.tags -%}
           <a class="btn btn-info btn-sm" href="{{ ('/blog@tag/' ~ t)|url }}">{{ t }}</a>&nbsp;
         {% endfor %}
-      </div>
       {% endif %}
     </div>
   </div>
+
 {% endblock %}

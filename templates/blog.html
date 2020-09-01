@@ -3,9 +3,20 @@
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {% for child in this.pagination.items %}
-    {{ render_blog_post(child, from_index=true) }}
-  {% endfor %}
+  <div class="container row">
+    <div class="col-sm-8">
+    {% for child in this.pagination.items %}
+      {{ render_blog_post(child, from_index=true) }}
+    {% endfor %}
 
-  {{ render_pagination(this.pagination) }}
+    {{ render_pagination(this.pagination) }}
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default tag-panel">
+        <div class="panel-heading"><h4>Explore Blog Tags</h4></div>
+        {% for t in this.children.distinct("tags") -%}
+          <a class="btn btn-info btn-sm" href="{{ ('/blog@tag/' ~ t)|url }}">{{ t }}</a>&nbsp;
+        {% endfor %}
+      </div>
+    </div>
 {% endblock %}
