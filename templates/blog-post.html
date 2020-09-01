@@ -2,6 +2,15 @@
 {% from "macros/blog.html" import render_blog_post %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
+  {% if this.toc %}
+  <h4>Table Of Contents</h4>
+  <ul class="toc">
+  {% for item in this.body.toc recursive %}
+    <li><a href="#{{ item.anchor }}">{{ item.title }}</a>{%
+     if item.children %}<ul>{{ loop(item.children) }}</ul>{% endif %}</li>
+  {% endfor %}
+  </ul>
+  {% endif %}
   <div class="container row">
     <div class="col-sm-10">
       {{ render_blog_post(this) }}

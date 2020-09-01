@@ -1,0 +1,121 @@
+title: Making This Site (Part II)
+---
+body:
+
+So, on I continue with making this site a bit more satisfying. It's one of those
+nice to [get some dub on][1] and just settle into something easy to achieve
+with minimal brainpower.
+
+#### Lektor Plugins
+
+##### lektor-tags
+
+So the first thing I've done is to try and use the [lektor-tags plugin][1],
+which seems to work pretty well: it really is about just following the README!
+
+A couple of things I've noticed during this is that lektor using server locally
+does not tell you which plugins actually load or don't load. Even with `-vvvv`
+there is no output to tell you that the plugin has loaded or not and
+because I made a small spelling mistake this became a bit annoying as there was
+no logging to tell me the plugin in the project didn't load.
+
+##### lektor-rst
+
+So there's no README [for the lektor-rst project][4] which is a shame and once
+again there is no conclusive information about the success of the load, though
+it is clear from the virtualenv installation that it installed into the build
+directory:
+
+```bash
+$ lektor plugin add lektor-rst
+$ lektor server -vvvv
+Updating packages in ~/.cache/lektor/packages/3fcdd194880fbf2be796613aee89c221 for project
+Collecting lektor-rst==0.2.0
+...
+Successfully installed ...lektor-rst-0.2.0...
+```
+
+I'm guessing that I can now select `rst` as a document type for my models which
+is nice. It's a slight shame that it's mutually exclusive (since all I want to
+do is have the option), so I wonder if I can implement a checkbox mechanism to
+experiment with this only in certain posts, or just suck it up and have two
+fields.
+
+##### lektor-markdown-header-anchors
+
+So this was interesting, in [adding this project][6] we avoid the virtualenv issue
+with plugins (see below). The full process for this is a lot more lightweight
+due to utilising [this `bdist_wheel --universal` feature][5]
+
+```bash
+$ lektor plugin add lektor-markdown-header-anchors
+Package lektor-markdown-header-anchors (0.3.1) was added to the project
+$ lektor server -vvvv
+Updating packages in ~/.cache/lektor/packages/3fcdd194880fbf2be796613aee89c221 for project
+Collecting lektor-markdown-header-anchors==0.3.1
+  Downloading lektor_markdown_header_anchors-0.3.1-py2.py3-none-any.whl (4.1 kB)
+Installing collected packages: lektor-markdown-header-anchors
+Successfully installed lektor-markdown-header-anchors-0.3.1
+WARNING: Target directory ~/.cache/lektor/packages/3fcdd194880fbf2be796613aee89c221/__pycache__ already exists. Specify --upgrade to force replacement.
+ * Project path: ~/.../inconsistentrecords.lektorproject
+ * Output path: ~/.cache/lektor/builds/0fdf35440669b574822909b8822e9aa1
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+#### Lektor and virtualenv
+
+I'm very intrigued by the [reluctance that Lektor has to optimise for
+virtualenv installation][3]. Since I generally use virtualenvs or conda for
+everything I do on my system, having a system managing itself via these
+mechanisms without letting me manually go about the installation is a negative
+experience for me.
+
+Another problem with this is after virtualenv installation of packages the
+overhead in the lektor/packages directory is pretty high.
+
+```bash
+[ ... ~/.cache/lektor/packages ]$ du -hs *
+84M	3fcdd194880fbf2be796613aee89c221
+74M	d00edb3d4a285124a2ee822f57b33698
+```
+
+For two relatively simple packages it is quite a high price to pay to use 150MB
+for the convenience of having dependency management taken out of my hands. What
+I will do is elaborate on whether it's possible to circumvent this easily,
+though for the moment I took the bootstrapped environment for the sake of
+simplicity. I can see the logic for usability, but am interested in the ease of
+development/contributing, as I am keen to switch this mechanism off so I can
+easily install these plugins locally and *contribute back*.
+
+#### Conclusion
+
+I still really like Lektor, as with any new project it's great to see the
+innovations made and get the bit between my teeth to delve into something new.
+This was always about having some really quick blogging software as well, and
+I can totally see this fulfils that goal as I haven't scratched the surface of
+Lektor and it's plugin ecosystem yet. That said, I'm skipping past doing this
+a little to get things published and done!!!
+
+At least there's a record of what I need to do now. ;-)
+
+PS. Also noticed some weirdness in trying to link between blogposts using
+relative URLs in the markdown body. Best investigate that too in case I'm being
+dense!
+
+[1]: http://radio.garden/listen/dr-dick-s-dub-shack/mqdXmYNU
+[2]: https://github.com/lektor/lektor-tags
+[3]: https://www.getlektor.com/docs/installation/#pip
+[4]: https://github.com/fschulze/lektor-rst
+[5]: https://packaging.python.org/guides/distributing-packages-using-setuptools/#universal-wheels
+[6]: https://github.com/lektor/lektor-markdown-header-anchors
+---
+pub_date: 2020-09-01
+---
+tags:
+
+lektor
+lektor-plugins
+todo
+web
+---
+toc: true
