@@ -15,7 +15,8 @@ based file based CMS which is totally extensible. That's easy, flexible and
 functional enough not to produce any barriers.
 
 I've munged in a bit of bootstrap and jquery around the sides, as I don't do
-aesthetics. I have looked at NPM and the like for resource management.
+aesthetics. I have looked at NPM and the like for resource management but I am
+not doing anything fancy enough to bother at present (this may well change!)
 
 Again, too many barriers. I'm keeping it simple. Thankfully we live in a world
 where one doesn't have to pour hours into determining if something will work
@@ -47,3 +48,8 @@ interesting and deserve some blogging about I think)
 * Make the styling a bit less gross!
 ---
 pub_date: 2020-08-29
+---
+tags:
+
+web
+lektor

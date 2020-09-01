@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<h3>Tag: {{ this.tag }}</h3>
+<h4>Items:</h4>
+<ul>
+  {% for i in this.items %}
+    <li><a href="{{ i|url }}">{{ i._id }}</a></li>
+  {% else %}
+    <li><em>No items.</em></li>
+  {% endfor %}
+</ul>
+{% endblock %}

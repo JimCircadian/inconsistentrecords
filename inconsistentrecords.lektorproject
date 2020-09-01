@@ -15,3 +15,6 @@ target = rsync://staging-host/var/www/blog.inconsistentrecords
 [servers.production]
 name = Production!
 target = rsync://production-vps/var/www/blog.inconsistentrecords
+
+[packages]
+lektor-tags = 0.3
