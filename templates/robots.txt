@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:   /static/*
+
+Sitemap:    {{ "/sitemap.xml"|url(external=True) }}
