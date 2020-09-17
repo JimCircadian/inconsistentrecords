@@ -1,7 +1,14 @@
 <!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/styles.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — Inconsistent Records</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="{% block description %}The public facia of Jim Circadian: code, blog, resources, imagery, tunes and general musings on life...{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}data,science,technology,music,writing,blog,tutorial,programming,artificial intelligence,life,universe,everything{% endblock %}">
+    <meta name="author" content="Jim Circadian">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="lektor">
+    <link rel="stylesheet" href="{{ '/static/styles.css'|url }}">
+    <title>{% block title %}Welcome{% endblock %} — Inconsistent Records</title>
+</head>
 <body>
     {% include 'include/navigation.html' %}
     <div class="container">
