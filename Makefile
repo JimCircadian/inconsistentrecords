@@ -2,7 +2,7 @@
 #.ONESHELL:
 #.SHELLFLAGS := -eu -o pipefail
 
-.PHONY: dev install deploy-staging deploy-production
+.PHONY: dev install deploy-staging deploy-production lektor
 
 all: dev
 
@@ -17,3 +17,6 @@ deploy-production:
 	lektor deploy production
 
 install:
+
+lektor:
+

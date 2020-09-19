@@ -1,0 +1,16 @@
+
+{% macro render_gallery(item, id="gallery", title="Photos") %}
+  <div id="{{ id }}">
+    {% for image in item.attachments.images %}
+    <a class="{{ id }}_item" href="{{ image|url }}" data-sub-html="{{ image.caption }}">
+        <img src="{{ image.thumbnail(100) }}" alt="{{ image.caption }}">
+    </a>
+    {% endfor %}
+  </div>
+  <script language="javascript">
+    if (typeof(window.galleries) === "undefined") {
+      window.galleries = Array();
+    }
+    window.galleries.push("{{ id }}")
+  </script>
+{% endmacro %}

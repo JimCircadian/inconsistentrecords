@@ -4,21 +4,24 @@ title: Making This Site (Part III)
 ---
 body:
 
-It's been a bit busy recently but, now, I return to the blogosphere mainly as an escape from the 
-insanity of modern life! 
+It's been a bit busy recently but, now, I return to the blogosphere mainly as an escape from the
+insanity of modern life!
 
 ### Current TODO list for this site
 
 There are a few things that I'm keen to solve, which I must admit I've not found intuitive to get
-my head round in Lektor just yet. I've not tried hard, but definitely if it's not immediately 
-intuitive (or is outstanding from [part 1][1] or [part 2][2]) then I fancy having a crack at wrapping 
-it up in this post. Here's a summary: 
+my head round in Lektor just yet. I've not tried hard, but definitely if it's not immediately
+intuitive (or is outstanding from [part 1][1] or [part 2][2]) then I fancy having a crack at wrapping
+it up in this post. Here's a summary:
 
 * I haven't yet found a way to query the project settings from Lektor in templates.
-* You can set a URL root in the project file, but not per destination, which is slightly frustrating
-as I'd love to be able to ensure I wasn't pointing at links in the production instance from the locally
+* You can set a URL root in the project file, but not per destination, which is slightly frustrating as I'd love to be able to ensure I wasn't pointing at links in the production instance from the locally
 served drafts...
-* TODO: get items from previous posts
+* Integrate with github
+* Flows, Data Bags
+* Image Operations
+* Issue with Relative Links
+* Issue with cache not responding to macro changes
 
 These are probably trivial, but reading the documentation I've not yet seen how to do it. These types
 of questions usually are indicative that I fancy delving into the internals of Lektor, but hopefully
@@ -28,7 +31,7 @@ by writing about them here, others won't feel frustrated if that's not their bag
 
 
 [1]
-[2] 
+[2]
 ---
 pub_date: 2020-09-19
 ---
@@ -38,3 +41,5 @@ lektor
 web
 ---
 toc: true
+---
+_discoverable: yes

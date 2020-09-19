@@ -1,3 +1,4 @@
+{% from "macros/gallery.html" import render_gallery %}
 {% macro render_blog_post(post, from_index=false) %}
   <div class="blog-post">
   {% if from_index %}
@@ -10,6 +11,7 @@
   </p>
   {% if not from_index %}
   {{ post.body }}
+  {{ render_gallery(post) }}
   {% endif %}
   </div>
 {% endmacro %}
