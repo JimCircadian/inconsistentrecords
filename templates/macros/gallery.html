@@ -3,7 +3,7 @@
   <div id="{{ id }}">
     {% for image in item.attachments.images %}
     <a class="{{ id }}_item" href="{{ image|url }}" data-sub-html="{{ image.caption }}">
-        <img src="{{ image.thumbnail(100) }}" alt="{{ image.caption }}">
+        <img class="border rounded" src="{{ image.thumbnail(100) }}" alt="{{ image.caption }}">
     </a>
     {% endfor %}
   </div>
