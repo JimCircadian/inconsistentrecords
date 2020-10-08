@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
+{% from "macros/isso.html" import render_comments %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
   <div class="container row">
@@ -15,6 +16,8 @@
       <br />
       {% endif %}
       {{ render_blog_post(this) }}
+
+      {{ render_comments(this) }}
     </div>
     <div class="col-sm-2 tag-panel">
       {% if this.tags %}
