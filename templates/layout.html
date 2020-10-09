@@ -8,7 +8,17 @@
     <meta name="generator" content="lektor">
     <link rel="stylesheet" href="{{ '/static/css/styles.css'|url }}">
     <link rel="stylesheet" href="{{ '/static/css/lightgallery.min.css'|url }}">
+    <link type="text/css" rel="stylesheet" href="{{ '/static/css/lightslider.min.css'|url }}" />
     <title>{% block title %}Welcome{% endblock %} — Inconsistent Records</title>
+    <script src="{{ '/static/js/jquery.min.js'|url }}"></script>
+    <script src="{{ '/static/js/bootstrap.min.js'|url }}"></script>
+    <script src="{{ '/static/js/lightgallery.min.js'|url }}"></script>
+    <script src="{{ '/static/js/lightslider.min.js'|url }}"></script>
+
+    <script src="{{ '/static/js/jquery.mousewheel.min.js'|url }}"></script>
+    <script src="{{ '/static/js/lg-thumbnail.min.js'|url }}"></script>
+    <script src="{{ '/static/js/lg-fullscreen.min.js'|url }}"></script>
+
 </head>
 <body>
 
@@ -23,11 +33,4 @@
       </div>
     </div>
     {% include 'include/footer.html' %}
-    <script src="{{ '/static/js/jquery.min.js'|url }}"></script>
-    <script src="{{ '/static/js/bootstrap.min.js'|url }}"></script>
-    <script src="{{ '/static/js/lightgallery.min.js'|url }}"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-    <script src="{{ '/static/js/lg-thumbnail.min.js'|url }}"></script>
-    <script src="{{ '/static/js/lg-fullscreen.min.js'|url }}"></script>
 </body>

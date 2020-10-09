@@ -1,10 +1,29 @@
 
 {% macro render_gallery(item, id="gallery", title="Photos") %}
-  <div id="{{ id }}">
+  <ul id="{{ id }}">
     {% for image in item.attachments.images|list|sort(attribute='path') %}
-    <a class="{{ id }}_item" href="{{ image|url }}" data-sub-html="{{ image.caption }}">
-        <img class="border rounded" src="{{ image.thumbnail(100) }}" alt="{{ image.caption }}">
-    </a>
+    <li data-thumb="{{ image.thumbnail(300) }}"
+        data-src="{{ image|url }}"
+        data-sub-html="{{ image.caption }}">
+        <img src="{{ image.thumbnail(300) }}" alt="{{ image.caption }}">
+    </li>
     {% endfor %}
-  </div>
+  </ul>
+  <script language="javascript">
+    $(document).ready(function() {
+      $('#gallery').lightSlider({
+          mode: "slide",
+          thumbItem: 6,
+          currentPagerPosition:'left',
+          controls: true,
+          pager: true,
+          loop: true,
+          onSliderLoad: function(el) {
+            el.lightGallery({
+              selector: '#imageGallery .lslide'
+            });
+          }
+      });
+    });
+  </script>
 {% endmacro %}
