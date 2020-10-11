@@ -16,6 +16,8 @@
       <br />
       {% endif %}
       {{ render_blog_post(this) }}
+
+      {{ render_comments(this) }}
     </div>
     <div class="col-sm-2 tag-panel">
       {% if this.tags %}

@@ -1,4 +1,15 @@
 {% macro render_comments(source) %}
-    <script data-isso="https://comments.staging.inconsistentrecords.co.uk/" src="{{ '/static/js/embed.min.js'|url }}"></script>
+  <div class="container">
+    <hr />
+    <p>Comments</p>
+    <p class="small">Please do leave a comment. I'm moderating them manually for the moment and
+      the <a href="https://github.com/posativ/isso">Isso project</a> I'm finding
+      slightly experimental, but AMAZING nonetheless. I won't reset the comments
+      database now though, so feedback will be valued!</p>
+    <br />
+    <script data-isso="{{ bag('comments.url') }}"
+            data-isso-vote-levels="true"
+            src="{{ '/static/js/embed.min.js'|url }}"></script>
     <section id="isso-thread"></section>
+  </div>
 {% endmacro %}

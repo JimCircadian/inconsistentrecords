@@ -18,9 +18,13 @@
           controls: true,
           pager: true,
           loop: true,
+          auto: true,
+          speed: 800,
+          enableTouch: false,
+          enableDrag: false,
           onSliderLoad: function(el) {
             el.lightGallery({
-              selector: '#imageGallery .lslide'
+              selector: '#{{ id }} .lslide'
             });
           }
       });

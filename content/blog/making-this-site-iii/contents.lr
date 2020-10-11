@@ -17,7 +17,7 @@ it up in this post. Here's a summary:
 * I haven't yet found a way to query the project settings from Lektor in templates.
 * You can set a URL root in the project file, but not per destination, which is slightly frustrating as I'd love to be able to ensure I wasn't pointing at links in the production instance from the locally
 served drafts...
-* Integrate with github
+* Integrate with isso
 * Flows, Data Bags
 * Image Operations
 * Issue with Relative Links
@@ -27,7 +27,9 @@ These are probably trivial, but reading the documentation I've not yet seen how 
 of questions usually are indicative that I fancy delving into the internals of Lektor, but hopefully
 by writing about them here, others won't feel frustrated if that's not their bag!
 
+
 http://sachinchoolur.github.io/lightslider/examples.html
+Nice way of debugging isso with local URI (eg. source data bags from envvars)
 
 
 [1]
