@@ -11,7 +11,9 @@
   </p>
   {% if not from_index %}
   {{ post.body }}
-  {{ render_gallery(post) }}
+  {% if post.use_gallery %}
+    {{ render_gallery(post) }}
+  {% endif %}
   {% endif %}
   </div>
 {% endmacro %}

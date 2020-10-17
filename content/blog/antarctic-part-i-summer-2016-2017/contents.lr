@@ -21,6 +21,8 @@ photos
 ---
 toc: no
 ---
+use_gallery: yes
+---
 _discoverable: yes
 ---
 _hidden: no
