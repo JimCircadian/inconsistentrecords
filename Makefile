@@ -20,3 +20,5 @@ install:
 
 lektor:
 
+generate-projects: 
+	
