@@ -1,11 +1,26 @@
+
 name: inconsistentrecords
 ---
 url: https://github.com/JimCircadian/inconsistentrecords
 ---
-date: 2020-09-01
+date: 2020-12-24 21:52:52
 ---
-summary:
+summary: 
 
-This is this website! 
+<pre>
+### Inconsistent Records
 
-Built in Lektor and the subject of the first of the blog posts on this site....
+Lektor based personal site. 
+
+[Visit the site on the web here...](https://inconsistentrecords.co.uk)
+
+</pre>
+---
+about: 
+---
+description: ### Inconsistent Records
+
+Lektor based personal site. 
+
+[Visit the site on the web here...](https://inconsistentrecords.co.uk)
+

@@ -14,7 +14,7 @@ target = rsync://localhost/var/www/html/inconsistentrecords
 
 [servers.staging]
 name = Local Staging
-target = rsync://staging-host/var/www/blog.inconsistentrecords
+target = rsync://staging-vps/var/www/blog.inconsistentrecords
 
 [servers.production]
 name = Production!

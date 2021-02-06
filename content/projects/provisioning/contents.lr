@@ -1,1 +1,30 @@
-name: provisioning-system
+
+name: provisioning
+---
+url: https://github.com/JimCircadian/provisioning
+---
+date: 2020-12-16 23:44:15
+---
+summary: 
+
+<pre>
+
+
+
+## TODO
+
+- Network configuration, password and keys dynamic injection into libvirt ks
+- Remove KS on host after builds
+
+</pre>
+---
+about: 
+---
+description: 
+
+
+## TODO
+
+- Network configuration, password and keys dynamic injection into libvirt ks
+- Remove KS on host after builds
+

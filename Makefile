@@ -22,6 +22,7 @@ deploy-production:
 	lektor deploy production
 
 generate-projects: 
+	./scripts/venv/bin/python scripts/project_content jimcircadian
 
 site:
 	lektor build

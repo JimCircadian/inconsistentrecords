@@ -1,1 +1,26 @@
+
 name: ansible-role-libvirtd
+---
+url: https://github.com/JimCircadian/ansible-role-libvirtd
+---
+date: 2020-12-03 00:43:42
+---
+summary: 
+
+<pre>
+# ansible-role-libvirtd
+Ansible role for configuration of libvirtd
+
+## 2020 update
+Paused development on this for the moment.
+
+</pre>
+---
+about: 
+---
+description: # ansible-role-libvirtd
+Ansible role for configuration of libvirtd
+
+## 2020 update
+Paused development on this for the moment.
+
