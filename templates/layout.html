@@ -6,19 +6,23 @@
     <meta name="author" content="Jim Circadian">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="lektor">
+    <meta name="twitter:dnt" content="on">
+ 
     <link rel="stylesheet" href="{{ '/static/css/styles.css'|url }}">
     <link rel="stylesheet" href="{{ '/static/css/lightgallery.min.css'|url }}">
     <link type="text/css" rel="stylesheet" href="{{ '/static/css/lightslider.min.css'|url }}" />
     <title>{% block title %}Welcome{% endblock %} — Inconsistent Records</title>
-    <script src="{{ '/static/js/jquery.min.js'|url }}"></script>
-    <script src="{{ '/static/js/bootstrap.min.js'|url }}"></script>
-    <script src="{{ '/static/js/lightgallery.min.js'|url }}"></script>
-    <script src="{{ '/static/js/lightslider.min.js'|url }}"></script>
 
-    <script src="{{ '/static/js/jquery.mousewheel.min.js'|url }}"></script>
-    <script src="{{ '/static/js/lg-thumbnail.min.js'|url }}"></script>
-    <script src="{{ '/static/js/lg-fullscreen.min.js'|url }}"></script>
+    <script src="{{ '/static/js/jquery.min.js'|url }}" type="text/javascript" language="javascript"></script>
+    <script src="{{ '/static/js/bootstrap.min.js'|url }}" type="text/javascript" language="javascript"></script>
+    <script src="{{ '/static/js/lightgallery.min.js'|url }}" type="text/javascript" language="javascript"></script>
+    <script src="{{ '/static/js/lightslider.min.js'|url }}" type="text/javascript" language="javascript"></script>
 
+    <script src="{{ '/static/js/jquery.mousewheel.min.js'|url }}" type="text/javascript" language="javascript"></script>
+    <script src="{{ '/static/js/lg-thumbnail.min.js'|url }}" type="text/javascript" language="javascript"></script>
+    <script src="{{ '/static/js/lg-fullscreen.min.js'|url }}" type="text/javascript" language="javascript"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=grey&thirdparty=1&noGeoIp=1&refreshPage=1&top=1&showNoConsent=1&showPolicyLink=1&blocking=1&remember=30&privacyPage=https%3A%2F%2Finconsistentrecords.co.uk%2Fprivacy%2F"></script>
 </head>
 <body>
 
@@ -30,7 +34,19 @@
           {% block body %}{% endblock %}
           </div>
         </div>
+        {% if this.twitter %}
+        <div class="col py-3 col-sm-4">
+          <div class="container shadow border p-2">
+            <a class="twitter-timeline" data-tweet-limit="5" data-chrome="transparent" data-dnt="true" href="https://twitter.com/JimCircadian?ref_src=twsrc%5Etfw">Tweets by JimCircadian</a> 
+            <script async 
+                src="https://platform.twitter.com/widgets.js" 
+                charset="utf-8" 
+                type="text/javascript"></script>
+          </div>
+        </div>
+        {% endif %}
       </div>
     </div>
     {% include 'include/footer.html' %}
+
 </body>
