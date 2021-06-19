@@ -24,3 +24,4 @@ target = rsync://production-vps/var/www/blog.inconsistentrecords
 lektor-tags = 0.3
 lektor-rst = 0.2.0
 lektor-markdown-header-anchors = 0.3.1
+lektor-atom = 0.3.1
