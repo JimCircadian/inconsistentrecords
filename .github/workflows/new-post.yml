@@ -24,7 +24,7 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
         with:
-          status: New blog post: ${{ env.title }}
+          status: "New blog post: ${{ env.title }}"
           media_paths: ${{ env.first_image }}
 
       - run: echo ${{ steps.tweet.outputs.response }}
