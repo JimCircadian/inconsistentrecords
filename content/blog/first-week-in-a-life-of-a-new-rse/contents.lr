@@ -1,0 +1,79 @@
+title: First week in a life of a new RSE
+---
+description: First week in a new role as a Research Software Engineer for the British Antarctic Survey
+---
+keywords:
+
+rse
+work
+bas
+software
+development
+---
+pub_date: 2021-06-19
+---
+tags:
+
+rse
+work
+software
+life
+---
+toc: yes
+---
+body:
+
+## Introduction
+
+<div class="float-right col-md-6">
+  <img src="./homeoffice.jpg" class="w-100 p-3" alt="Home office" />
+  <p class="font-italic">My home office. Very lucky to have the dedicated space to keep work away from relaxation!</p>
+</div>
+
+So this week was my first as a Research Software Engineer for the British Antarctic Survey, whom I've worked for over the last five years in various roles. I'm keen to blog regularly about this, as I feel it's an important culmination of 20 years working in (and around) the tech industry, with longer spent programming, but especially because I'm not arriving as an academic. 
+
+If anything I can write is inspiring or informative about the research software engineer role, the British Antarctic Survey or the science we do for anyone, then it'll be worth blogging!
+
+The next section was written as I started, then I got on with some work, then I decided to actually write after the first week. This intro was written at the end of the week, so I best reread what I wrote on my first day! ;-) 
+
+## Transition first, is it!?! (14/6/21)
+
+So today is my first day as a Research Software Engineer. Nothing feels different, but that's perhaps not so surprising given my line manager is the same, the organisation is the same and I still have a pressing need to deal with the same projects I did on Friday. 
+
+All that said, I am very excited! 
+
+So what has changed? Well firstly, I don't have to deal with ongoing support request (as much) which is a massive time saver (I was in a role that is best described as third line support up until this point.) Secondly, I know that once I get through the initiatives I'd started in my previous, I've got a modus operandi to really take on board what we're doing with software in the British Antarctic Survey and make it more accessible and more beneficial for everyone in the organisation. This is a loose remit, but a very important one. 
+
+That's my message to myself as I transition into this role: keep your eyes on *why* you wanted to do this in the first place!
+
+## First week down!
+
+As anyone who has even remotely followed this blog knows, I'm not a natural blogger. It's definitely something different to writing fiction, which I've always been more at home with. I'm keen to work on a way of distilling an experiential and technical narrative that is clear in its message, as time goes by, but in truth I'd like for my internal narrative to flow freely as well! 
+
+### Aspirations for BAS and its collaborators
+
+Software development, if anything, has been my lifes work so far. I've been fortunate and privileged enough to work in a variety of industries, with a lot of different technologies, as well as gain insight into non-technical areas that are strongly associated, for ill or for gain, with its practice. I've been through a simply ridiculous number of job titles, most of which have seemed rather arbitrary, since I've nearly always just ended up being "that guy who is keen on the software stuff..." The [Research Software Engineer, a role described only really relatively recently][1], seems to have a clearer goal in sight than any I've ever had before. 
+
+Technology as a whole is, to me, a wonderful toolbox for discovery and exploration in both our physical and intellectual pursuits. To me I've really struck lucky in doing what I love with the express aim of finding new ways to improving the way technologists, scientists and any other interested parties can collaborate and discover things that help them use technology! That's really the goal for me, to help improve the tools and culture both within and outside of the organisations I'm involved with.
+
+### Building a profile
+
+<div class="float-left col-md-6">
+  <img src="./homerelax.jpg" class="w-100 p-3" alt="Home studio / living room" />
+  <p class="font-italic">My living space. This is where I go to relax, separate from my office, or generally to think.</p>
+</div>
+
+**For all my over-exuberant and bold claims above, the truth is you have to take small steps to move forward.**
+
+The conclusion I've come to recently, before taking this job (and with growing older), is that if you're really quite passionate about something then it's worth building a profile, personal or not, to communicate through. Working in very, very commercial settings, this almost didn't feel possible. In fact, for me historically, the IT industry often actively inhibits openness. This thankfully has been changing significantly in the last decade or more, as newer companies have facilitated the ability for staff to communicate on their own terms ([though as we've seen with recent stories this isn't always what it's cracked up to be][2].) Thankfully, the alternative for me in working in scientific and research oriented domains, has been another manner by which to start thinking about what and how I'd like to communicate with the world!
+
+This is going to be an ongoing task and somewhat of a learning experience to do virtually. I've been lucky to be relatively good with communicating with people and organisations face to face, but the world has obviously been shifting and taken a proper swing (thanks to the pandemic) towards the importance of virtual engagement (we'll ignore the societal and psychological dangers of technology here. There are many positives to the judicious use of tools for social activity and community engagement, so that's not a discussion I'm getting into here!) Alongside the exciting work I have lined up (which I will write about in subsequent posts), I'm going to make more effort to use the blog to collect together resources for communication, such as my relentless love for music and cooking (well, eating and cooking). This will hopefully get me more active in communicating how fun it is to be a techie, working for science and looking at the future of research and the environment with a hopeful, yet realistic mindset!
+
+The next few posts I hope to write about interesting projects I'm allocated to work on at BAS, those that I've been working on which still need concluding (but are interesting from my last role) and the efforts I'll put in to make this blog and site a little more interesting to read. 
+
+I hope maybe to give some insight about the perhaps slightly unconventional approach I've taken to get here as well, as I think it could be reassuring for those who, like me, are coming from non-standard, non-academic backgrounds wanting to contribute to science and research. Diversity and acceptance is more important now than at any other time in history, so contributing to the greater narrative can't really do any harm even if it's from a relatively humdrum individual! 
+
+Welcome to the life of a Research Software Engineer...
+
+[1]: https://www.research.ed.ac.uk/en/publications/the-research-software-engineer
+[2]: https://en.wikipedia.org/wiki/Timnit_Gebru#Exit_from_Google
