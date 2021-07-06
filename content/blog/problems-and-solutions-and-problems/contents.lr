@@ -1,0 +1,62 @@
+title: Solutions and Problems. Problems and Solutions
+---
+body:
+
+## Introduction
+
+Holiday and life has given a little break between the blog posts recently, but back to work today and I'm over the moon to be starting a new project in my role as RSE (rather than those I'm doing which are carried over.) There will be more on this technically without doubt, but I want to start with something more abstract and conceptual to write about, which arose during my first day back without having thought about software for a while.
+
+**This is purely an opinion piece**, derived from personal experience and a trigger to a thought process I have regularly. Nothing so much happened to create this ramble today, it just occurred to me it's a line of thinking I often think of. There are always better practitioners out there and I'd love to hear from you in the comments if you would like to feed back. I will respond to everyone who does!
+
+## Problems to Solutions
+
+Once, many moons ago, somebody on a conference call suggested to me that we switch the entire infrastructure from on-premise VM infrastructure (effectively a LAMP stack on steroids) to an on-premise containerised infrastructure. This was in the mid-2010s and my reaction, following the call, was simple: "why on Earth would we consider that a viable proposal when their codebase is fucked?"
+
+This company was a billion£+ turnvover company and the software infrastructure had numerous problems, not least that it wasn't easily able to scale horizontally because of the way the application stack was built. That's not necessarily important, but what is, is that this was a prime example of the "shiny solution" arriving before identification or addressing of the problems. So instead of solving the problems, they thought that a much more abstracted technology would automatically solve it (and without any significant cost, in spite of us being a contractor!) 
+
+What I mean by this is that with anything developed externally, adopted via legacy or technical debt, or inherited from a previous incarnation we have to identify solutions ***to*** problems before throwing it into a new infrastructure or adopting solutions that don't meet the problem statement. The sad truth of the matter is that the path of least resistance often doesn't lead us there and thus we inherit the debt, design issues and flaws of previous iterations when we use a solution to wrap up problems. I think this is dangerous, as well as being lazy and more importantly it doesn't help us to understand or fix old code which is important for new developers. Addressing technical debt allows us to redesign, rearchitect and understand the development of technologies over time, which is not something to be sniffed at.
+
+## Solutions to Problems
+
+Applying solutions to problems is purely a case of misappropriation, so we should always look to solve problems on a case by case basis. This very much follows on from the previous section, is simple to understand when you read the words, but is not the way industry and science always behave. The fact is that computing in the last 30 years (about the time I've been programming) has gone from "get all you can" to "have all you want"; that is, we are so abundantly provided with computational power we can make any shit stick to the problem based on "preferred" solutions. 
+
+Why is this a problem? Well, think about the cost. Firstly, computing power costs energy, something I'm always keen not to waste. If you spend time recycling at home, why are you willing to be lazy at work, especially with something as valuable as computing resource (think about electricity, cooling, precious metals and sheer manufacturing cost and you start to get a picture of the cause-and-effect relationship to mistreating computing resource.) 
+
+Secondly, it costs money; if you (like I do) work for a public sector organisation, that's easy to understand. In the private sector, you're only ever cutting into profit margins, reducing your own pay, or raising costs for the consumer and thus contributing to the ever present dangers of inflation. This all feeds back to the supply chain as well, much like the first example did. 
+
+Finally, think about the technological development and the support chains that are created. If we homogenise technology by applying solutions uniformly to problems irrespective of their suitability, we damage innovation and promotion of skills. A world that is composed of few technologies is less likely to adapt, so it is important that we make every effort to identify where the most appropriate or optimal solution **doesn't** exist for our use case and work out how to arrive at it, because that innovation will likely serve others. 
+
+## Is there a conclusion
+
+**Not really, it's mostly a ramble.** However, it does lead me to think that this hints at one of many interesting continuums in IT. Maybe that's something I should really be writing about: **the software continuums**.
+
+Every day I learn a little bit more now the context for my work has changed. Today was no different. The discussion topic for this post was something I think about often, so it interested me; whether we approach solutions from the most appropriate or sustainable fashion throughout IT as a whole. Today I also learned other things that I and [others have realised, such as the fact that meetings and administration suck concentration away from a role][1] (which I'm seeing could be more problematic in a research-oriented role.) I learned (again) that small actions can build bridges in the information world, such as the importance of simply forwarding information on. 
+
+These latter items I didn't focus on because every day, you realise that something you think "a-ha" to is probably something you learned at least once before and with me that happens a lot throughout the day. So today I had to pick a topic to try and write about. 
+
+Welcome to the pain in the arse that is the human mind: humans like building habitual behaviours, and that's why I wrote about a habitual thought that keeps cropping up. Ultimately that's the benefit of having a little experience, when someone arrives at a behaviour you have identified as sub-optimal, your habits tell you to ensure you don't follow blindly. 
+ 
+[1]: https://www.calnewport.com/books/deep-work/
+
+---
+toc: true
+---
+keywords:
+
+work
+devops
+software
+rse
+problem
+solution
+---
+pub_date: 2021-07-05
+---
+tags:
+
+work
+devops
+software
+rse
+---
+description: Some ramblings from a day after a holiday
