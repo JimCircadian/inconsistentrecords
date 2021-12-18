@@ -15,7 +15,7 @@
       <div class="panel panel-default tag-panel">
         <div class="panel-heading"><h4>Explore Blog Tags</h4></div>
         {% for t in this.children.distinct("tags") -%}
-          <a class="btn btn-info btn-sm" href="{{ ('/blog@tag/' ~ t)|url }}">{{ t }}</a>&nbsp;
+          <a class="btn btn-info btn-md font-weight-bold" href="{{ ('/blog@tag/' ~ t)|url }}">{{ t }}</a>&nbsp;
         {% endfor %}
       </div>
     </div>
