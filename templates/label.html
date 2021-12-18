@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  {{ this.content }}
+
+  <div class="container row">
+    <div class="col-sm-8">
+    {% for child in this.children %}
+      <h3><a href="{{ child|url }}">{{ child.name }}</a></h3>
+    {% endfor %}
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default tag-panel">
+        <div class="panel-heading"><h4>Explore Music Tags</h4></div>
+        {% for t in this.children.distinct("tags") -%}
+          <a class="btn btn-info btn-sm" href="{{ ('/music@tag/' ~ t)|url }}">{{ t }}</a>&nbsp;
+        {% endfor %}
+      </div>
+    </div>
+{% endblock %}

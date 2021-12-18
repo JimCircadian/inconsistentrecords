@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.name }}{% endblock %}
+{% block body %}
+  <h2>{{ this.name }}</h2>
+  {% if this.archive %}
+  <p class="font-weight-bold font-italic">{{ this.name }} is an archive artist, no future music for this artist will be made.</p>
+  {% endif %}
+  {{ this.description }}
+  <br />
+  {% for music in this.attachments.order_by('-year') %}
+  <div class="container row">
+    <figure>
+      <figcaption>Listen to {{ music.name }} ({{ music.year }})</figcaption>
+      <audio
+        controls
+        preload="none"
+        src="{{ music.path|url }}">
+        Your browser does not support the <code>audio</code> element.</audio>
+    </figure>
+  </div>
+  {% endfor %}
+{% endblock %}

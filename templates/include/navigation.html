@@ -7,6 +7,7 @@
     <ul class="navbar-nav">
       {% for href, title in [
         ['/blog', 'Blog'],
+        ['/label', 'Netlabel'],
         ['/about', 'About']
       ] %}
         <li class="nav-item {% if this.is_child_of(href) %}active{% endif %}">
