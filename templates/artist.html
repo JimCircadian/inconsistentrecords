@@ -10,7 +10,14 @@
   {% for music in this.attachments.order_by('-year') %}
   <div class="container row">
     <figure>
-      <figcaption>Listen to {{ music.name }} ({{ music.year }})</figcaption>
+      <figcaption><p><span class="font-weight-bold">{{ music.name }}</span> ({{ music.year }}{% if music.live %} Live Recording{% endif %})
+    {% if music.description %}
+        <br />{{ music.description }}
+    {% endif %}
+		{% if music.tags|count > 0 %}
+          <span class="font-italic">Tags: {% for t in music.tags %}{{ t }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
+		{% endif %}
+      </p></figcaption>
       <audio
         controls
         preload="none"
