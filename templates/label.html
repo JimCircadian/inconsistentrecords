@@ -12,15 +12,6 @@
       {% endfor %}
     </div>
     <div class="col-sm-4">
-      <div class="panel panel-default tag-panel">
-        <div class="panel-heading"><h4>Explore Tags</h4></div>
-        {% if this.children.distinct("tags")|count > 0 %}
-          {% for t in this.children.distinct("tags") -%}
-            <a class="btn btn-info btn-md font-weight-bold" href="{{ ('/music@tag/' ~ t)|url }}">{{ t }}</a>&nbsp;
-          {% endfor %}
-        {% else %}
-        <p>No tags setup, please choose artist on the left...</p>
-        {% endif %}
-      </div>
+      <div class="panel panel-default tag-panel">&nbsp;</div>
     </div>
 {% endblock %}
