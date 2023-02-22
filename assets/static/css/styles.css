@@ -1,6 +1,6 @@
 .content { font-size: 20px; }
 
-.footer { width: 100%; font-size:0.7em; height: 1.2em; background-color: #151515; color: white; }
+.footer { width: 100%; font-size:0.7em; height: 1.8em; background-color: #151515; color: white; }
 
 .tag-panel .btn { margin-bottom:8px; }
 
@@ -15,7 +15,7 @@ html { font-family: -apple-system, courier, sans-serif; line-height: 1.15; -webk
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section { display: block; }
 
-body { margin: 0; font-size: 1.2rem; font-weight: 400; line-height: 1.5rem; color: #100020; text-align: left; background-color: #cae7c1; }
+body { margin: 0; font-size: 1.2rem; font-weight: 600; line-height: 1.5rem; color: #100020; text-align: left; background-color: #eae7a1; }
 
 [tabindex="-1"]:focus:not(:focus-visible) { outline: 0 !important; }
 
