@@ -2,5 +2,5 @@
 *.swp
 temp/
 packages/
-venv/
+/venv
 scripts/venv/
