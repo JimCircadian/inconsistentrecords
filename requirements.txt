@@ -1,0 +1,2 @@
+Lektor
+urllib3<2
