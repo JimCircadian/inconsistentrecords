@@ -5,6 +5,7 @@
 .tag-panel .btn { margin-bottom:8px; border:1px solid #100020; }
 
 pre {  background-color: #10203F; color: #DEDEF8; padding: 5px; }
-* { font-family: Helvetica, Arial; font-size: 1em; }
-h1, h2, h3, h4, h5, h6 { font-size: 1.1em; }
+* { font-family: Verdana, Arial, sans-serif; font-size: 1em; }
+h1, h2 { font-size: 1.2em; }
+h3, h4, h5, h6 { font-size: 1.1em; font-weight: bold; }
 
