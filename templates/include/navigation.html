@@ -8,6 +8,7 @@
       {% for href, title in [
         ['/blog', 'Blog'],
         ['/label', 'Netlabel'],
+		['/now', 'Now'],
         ['/about', 'About']
       ] %}
         <li class="nav-item {% if this.is_child_of(href) %}active{% endif %}">
