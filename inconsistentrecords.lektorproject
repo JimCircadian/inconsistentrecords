@@ -7,14 +7,18 @@ url_style = absolute
 
 ; These should never be easily identifiable. If we need identifiable strings in
 ; here, keep them out of this very public repo
-[servers.dev]
-name = Development
+[servers.local]
+name = Local
 default = yes
 target = rsync://localhost/var/www/html/inconsistentrecords
 
+[servers.dev]
+name = Development
+target = rsync://circadian@dev-vps/var/www/html/blog.inconsistentrecords
+
 [servers.staging]
-name = Local Staging
-target = rsync://staging-vps/var/www/blog.inconsistentrecords
+name = LAN Staging
+target = rsync://circadian@staging-vps/var/www/blog.inconsistentrecords
 
 [servers.production]
 name = Production!
