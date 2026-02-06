@@ -13,6 +13,10 @@ dev:
 	export LEKTOR_DEV=1
 	lektor server -vvvv
 
+deploy-development:
+	lektor build
+	lektor deploy dev
+
 deploy-staging:
 	lektor build
 	lektor deploy staging
