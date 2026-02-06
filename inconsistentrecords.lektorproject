@@ -14,7 +14,7 @@ target = rsync://localhost/var/www/html/inconsistentrecords
 
 [servers.dev]
 name = Development
-target = rsync://circadian@dev-vps/var/www/html/blog.inconsistentrecords
+target = rsync://circadian@dev-vps/var/www/blog.inconsistentrecords
 
 [servers.staging]
 name = LAN Staging
