@@ -9,3 +9,12 @@ pre {  background-color: #10203F; color: #DEDEF8; padding: 5px; }
 h1, h2 { font-size: 1.2em; }
 h3, h4, h5, h6 { font-size: 1.1em; font-weight: bold; }
 
+input#signup-email {
+    margin-top:6px
+}
+
+input#signup-subscribe {
+    height:32px;
+    margin-top:6px;
+    padding-top:0.2rem;
+}
