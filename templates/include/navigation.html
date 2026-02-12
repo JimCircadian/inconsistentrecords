@@ -8,7 +8,7 @@
       {% for href, title in [
         ['/blog', 'Blog'],
         ['/label', 'Netlabel'],
-		['/now', 'Now'],
+    	['/now', 'Now'],
         ['/about', 'About']
       ] %}
         <li class="nav-item {% if this.is_child_of(href) %}active{% endif %}">
@@ -17,7 +17,7 @@
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <form id="signup-form" class="row g-3" action="/signup.cgi" method="post">
+        <form id="signup-form" class="row g-3" action="{{ '/signup'|url }}" method="POST">
           <!--<p id="signup-message" style="display:block;">&nbsp;</p>-->
           <div class="col-auto">
             <label class="form-label form-label nav-link" for="email">Email: </label>
