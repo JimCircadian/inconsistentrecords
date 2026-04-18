@@ -8,7 +8,7 @@
       {% for href, title in [
         ['/blog', 'Blog'],
         ['/label', 'Netlabel'],
-    	['/now', 'Now'],
+    	  ['/now', 'Now'],
         ['/about', 'About']
       ] %}
         <li class="nav-item {% if this.is_child_of(href) %}active{% endif %}">
@@ -29,6 +29,11 @@
             <input id="signup-subscribe" class="btn btn-secondary mb-3" type="submit" value="Subscribe" />
           </div>
         </form>
+        <script type="text/javascript" language="javascript">
+          $('#signup-subscribe').click(function(){
+             $('#signup-form').attr('action', "https://" + window.location.host.replace("blog", "list") + "/signup");
+          });
+        </script>
       </li>
     </ul>
   </div>

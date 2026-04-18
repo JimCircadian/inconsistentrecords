@@ -10,11 +10,12 @@ h1, h2 { font-size: 1.2em; }
 h3, h4, h5, h6 { font-size: 1.1em; font-weight: bold; }
 
 input#signup-email {
-    margin-top:6px
+    margin-top: 4px;
+    padding-top:8px;
 }
 
 input#signup-subscribe {
     height:32px;
-    margin-top:6px;
+    margin-top:4px;
     padding-top:0.2rem;
 }
