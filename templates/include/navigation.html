@@ -24,6 +24,7 @@
           </div>
           <div class="col-auto">
             <input id="signup-email" class="form-control form-control-sm" type="text" placeholder="Enter Email" name="email" />
+            <input id="signup-identifier" name="identifier" type="hidden" value="..." />
           </div>
           <div class="col-auto">
             <input id="signup-subscribe" class="btn btn-secondary mb-3" type="submit" value="Subscribe" />
@@ -31,7 +32,13 @@
         </form>
         <script type="text/javascript" language="javascript">
           $('#signup-subscribe').click(function(){
-             $('#signup-form').attr('action', "https://" + window.location.host.replace("blog", "list") + "/signup");
+            var url = window.location.host;
+            if (url.startsWith("blog")) {
+              url = url.replace("blog", "api");
+            } else {
+              url = "api." + url;
+            }
+            $('#signup-form').attr('action', "https://" + url + "/subscribe");
           });
         </script>
       </li>
